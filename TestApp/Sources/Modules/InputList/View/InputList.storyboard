@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Input List View Controller-->
+        <scene sceneID="8IX-nA-IdZ">
+            <objects>
+                <viewController storyboardIdentifier="InputListViewController" id="H7m-8X-7ty" customClass="InputListViewController" customModule="TestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Uk3-4f-PpN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="HWD-vt-0ZV">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="617"/>
+                                <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="td9-uB-Ufr">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YGl-N7-Pxt">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="6ps-Ej-2as"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Отправить">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onSendButton:" destination="H7m-8X-7ty" eventType="touchUpInside" id="WA9-w9-wZV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YGl-N7-Pxt" firstAttribute="leading" secondItem="rE0-fK-YhU" secondAttribute="leading" id="2Hb-Hl-6nb"/>
+                            <constraint firstItem="HWD-vt-0ZV" firstAttribute="top" secondItem="rE0-fK-YhU" secondAttribute="top" id="9yj-9B-46G"/>
+                            <constraint firstItem="YGl-N7-Pxt" firstAttribute="bottom" secondItem="rE0-fK-YhU" secondAttribute="bottom" id="NoC-SR-XnX"/>
+                            <constraint firstItem="HWD-vt-0ZV" firstAttribute="trailing" secondItem="rE0-fK-YhU" secondAttribute="trailing" id="Qhg-Cj-QCw"/>
+                            <constraint firstItem="YGl-N7-Pxt" firstAttribute="top" secondItem="HWD-vt-0ZV" secondAttribute="bottom" id="U6N-PW-OaX"/>
+                            <constraint firstItem="HWD-vt-0ZV" firstAttribute="leading" secondItem="rE0-fK-YhU" secondAttribute="leading" id="vps-Gh-mjv"/>
+                            <constraint firstItem="rE0-fK-YhU" firstAttribute="trailing" secondItem="YGl-N7-Pxt" secondAttribute="trailing" id="ym6-ke-idx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rE0-fK-YhU"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="HWD-vt-0ZV" id="qW3-Vn-K1h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rp9-ru-IMh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-135.19999999999999" y="166.8665667166417"/>
+        </scene>
+    </scenes>
+</document>

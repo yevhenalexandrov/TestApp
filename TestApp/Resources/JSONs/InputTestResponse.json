@@ -1,0 +1,25 @@
+{
+    "fields": [
+        {
+            "id": "intro",
+            "type": "text",
+            "title": "Привет!",
+            "subtitle": "Ты успешно выполнил тестовое задание",
+            "description": "Заполни следующие поля"
+        },
+        {
+            "id": "name",
+            "type": "input",
+            "text": "Steve",
+            "placeholder": "Имя",
+            "description": "Напиши здесь свое имя"
+        },
+        {
+            "id": "surname",
+            "type": "input",
+            "text": null,
+            "placeholder": "Фамилия",
+            "description": "Напиши здесь свою фамилию"
+        }
+    ]
+}
